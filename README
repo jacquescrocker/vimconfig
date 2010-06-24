@@ -57,3 +57,35 @@ What I have configured:
 
 - unimpaired: no idea what this does
 
+TODO:
+
+map these textmate commands:
+
+CONTROL-SHIFT-H: this should "reformat" the document. 
+primarily use this for reformating javascript or html files
+
+CONTROL-SHIFT-V: this should "validate" the document
+html docs should validate using w3c markup validation service
+javascript files should validate using jslint
+ruby files should validate using ruby syntax parser
+
+COMMAND-R: this should "run" the file
+rspec: run test using rspec command
+cucumber: run cucumber test
+ruby: run file
+html: ?
+
+COMMAND-SHIFT-R: should run a focused unit test
+rspec: run a specific test
+cucumber: run a specific scenario
+
+COMMAND-/: should comment/uncomment code
+
+CONTROL-SHIFT-T: should retab the document (convert tabs to spaces)
+
+CONTROL-SHIFT-S: should remove trailing spaces from the document
+
+CONTROL-H: should look up documentation on the current word (or current highlighted word)
+
+visual tweaks:
+- slightly increase the vertical space between the lines

@@ -45,4 +45,8 @@ map <leader><S-f> :Ack
 " Setup Command-e to use ctags (Control-])
 map <D-e> <C-]>
 
-
+" Replicate textmate CMD-[ and CMD-] for indentation
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
