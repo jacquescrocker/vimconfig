@@ -39,9 +39,13 @@ What I have configured:
 
 - vim-haml: helps vim work better with Haml
 
+- vim-liquid: helps vim work better with the Liquid markup language
+
 - ack.vim: for project wide searching
 
 - fugitive: some handy git integration
+
+- vim-git: latest runtime git files
 
 - endwise: automatically adds end statements to common ruby blocks
 
