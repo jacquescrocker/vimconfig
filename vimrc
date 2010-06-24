@@ -67,3 +67,5 @@ map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
+set wildignore+=*.png,*.jpg,*.gif,*.ai,*.jpeg,*.psd,*.swp,*.jar,*.zip,*.gem,.DS_Store,log/**,tmp/**,coverage/**,rdoc/**
+

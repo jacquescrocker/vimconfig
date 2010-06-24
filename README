@@ -89,5 +89,3 @@ CONTROL-SHIFT-S: should remove trailing spaces from the document
 
 CONTROL-H: should look up documentation on the current word (or current highlighted word)
 
-visual tweaks:
-- slightly increase the vertical space between the lines

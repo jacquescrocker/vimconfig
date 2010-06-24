@@ -2,6 +2,7 @@ colorscheme vividchalk
 
 " set font to Monaco 14pt
 set guifont=Monaco:h14
+set linespace=1
 
 " turn on line numbering
 set number
