@@ -49,6 +49,8 @@ What I have configured:
 
 - vim-ruby: latest ruby configuration files
 
+- buffer-explorer: tools to easily navigate the open buffers
+
 - endwise: automatically adds end statements to common ruby blocks
 
 - abolish: no idea what this does

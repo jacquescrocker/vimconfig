@@ -26,7 +26,7 @@ map K <C-u>
 " set the LEADER key to ,
 let mapleader = ","
 
-",v reloads it -- making all changes active (have to save first)
+" ,v reloads the vimrc -- making all changes active (have to save first)
 map <silent> ,v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>:NERDTreeClose<CR>
 
 " ,d = toggle nerdtree
@@ -34,6 +34,13 @@ map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 " Shift-w maps to Control-W
 map <S-w> <C-w>
+
+" ,w will easily switch window focus
+map <leader>w <C-w>w
+
+" ,b will load up the buffer explorer
+map <leader>b :BufExplorerHorizontalSplit<CR>
+let g:bufExplorerSplitBelow=1 
 
 " Setup Command-t shortcut
 map <D-t> <leader>t
