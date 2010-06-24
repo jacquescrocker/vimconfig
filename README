@@ -41,10 +41,11 @@ What I have configured:
 
 - ack.vim: for project wide searching
 
-- unimpaired: no idea what this does
-
-- endwise: no idea what this does
+- endwise: automatically adds end statements to common ruby blocks
 
 - abolish: no idea what this does
 
 - repeat: no idea what this does
+
+- unimpaired: no idea what this does
+
