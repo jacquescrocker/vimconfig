@@ -47,6 +47,8 @@ What I have configured:
 
 - vim-git: latest runtime git files
 
+- vim-ruby: latest ruby configuration files
+
 - endwise: automatically adds end statements to common ruby blocks
 
 - abolish: no idea what this does
