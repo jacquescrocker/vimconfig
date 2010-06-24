@@ -29,8 +29,10 @@ let mapleader = ","
 " ,v reloads the vimrc -- making all changes active (have to save first)
 map <silent> ,v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>:NERDTreeClose<CR>
 
-" ,d = toggle nerdtree
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+" Commend-d will toggle the nerdtree drawer
+map <D-d> :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader><S-d> :NERDTree %:p:h<CR>
+map <leader>d :NERDTree<CR>
 
 " Shift-w maps to Control-W
 map <S-w> <C-w>
@@ -57,3 +59,11 @@ nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
+
+" Easy edit helpers
+" http://vimcasts.org/episodes/the-edit-command/
+map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
