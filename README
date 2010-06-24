@@ -1,0 +1,50 @@
+My MacVIM Setup for the Textmate Convert
+
+to use:
+- clone this repo somewhere (I have it at ~/Vim/config)
+    
+    mkdir ~/Vim
+    git clone git://github.com/railsjedi/vimconfig.git ~/Vim/config
+
+- symlink the vim files to where you cloned it
+    
+    ln -s $HOME/Vim/config ~/.vim
+    ln -s $HOME/Vim/config/vimrc ~/.vimrc
+    ln -s $HOME/Vim/config/gvimrc ~/.gvimrc
+
+- clone my awesome snippet repo (or fork it and clone your own) 
+
+    git://github.com/railsjedi/snipmate-snippets.git ~/Vim/snippets
+    ln -s $HOME/Vim/snippets ~/Vim/config/snippets
+
+
+--------
+
+What I have configured:
+- Pathogen: for easy adding/removing/updating of plugins (they go in the ~/.vim/bundle/ directory)
+
+- NerdTree: file manager
+
+- SnipMate: for textmate style snippets
+
+- NerdCommenter: comment/uncommenting for source code
+
+- VividChalk: great looking color scheme (looks exactly like VibrantInk on textmate)
+
+- Surround: tools to easily surround/modify wrapped blocks of code
+
+- vim-cucumber: helps vim work better with Cucumber
+
+- vim-rails: helps vim work better with Rails
+
+- vim-haml: helps vim work better with Haml
+
+- ack.vim: for project wide searching
+
+- unimpaired: no idea what this does
+
+- endwise: no idea what this does
+
+- abolish: no idea what this does
+
+- repeat: no idea what this does
