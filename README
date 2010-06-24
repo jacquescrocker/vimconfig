@@ -53,6 +53,8 @@ What I have configured:
 
 - endwise: automatically adds end statements to common ruby blocks
 
+- jquery: adds some minor syntax highlighting updates for jQuery scripts
+
 - abolish: no idea what this does
 
 - repeat: no idea what this does

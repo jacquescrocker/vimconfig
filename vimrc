@@ -11,7 +11,9 @@ set expandtab
 set nowrap
 set hidden
 
+" additional support for some file types
 autocmd BufRead *.html.erb set ft=eruby.html
+autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 set nofoldenable " Fuck code folding...
 
