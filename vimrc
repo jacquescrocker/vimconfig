@@ -45,7 +45,4 @@ map <leader><S-f> :Ack
 " Setup Command-e to use ctags (Control-])
 map <D-e> <C-]>
 
-" undo is stupid
-map u k
-map n j
 

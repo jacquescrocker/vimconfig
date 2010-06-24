@@ -9,6 +9,8 @@ set number
 " disable expanded macvim toolbar
 if has("gui_running")
   set guioptions=egmrt
+
+  " need this to enable the super retarded MacVim horizontal scrollbar
   set guioptions+=b
 endif
 
