@@ -27,7 +27,7 @@ What I have configured:
 
 - SnipMate: for textmate style snippets
 
-- NerdCommenter: comment/uncommenting for source code. use command-/ to toggle commenting
+- tComment: comment/uncommenting. use command-/ to toggle line comments
 
 - VividChalk: great looking color scheme (looks exactly like VibrantInk on textmate)
 
