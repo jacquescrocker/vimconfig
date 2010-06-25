@@ -75,16 +75,9 @@ map <leader>n :NERDTree<CR>
 " navigates nerdtree to the current file
 map <leader><S-d> :NERDTree %:p:h<CR> 
 
-" NERD Commenter
-let g:NERDSpaceDelims=1
-let g:NERDDefaultNesting=0
-let g:NERDCommentWholeLinesInVMode=1
-nmap <D-/> ,cc
-vmap <D-/> ,ccgv
-imap <D-/> <C-O>,cc
-nmap <D-S-/> ,cc
-vmap <D-?> ,ccgv
-imap <D-?> <C-O>,cc
+" NERD Commenter Sucks balls. Use tComment instead!
+nmap <D-/> gc
+vmap <D-/> gcgv
 
 " Toggle show invisibles
 nmap <leader>l :set list!<CR>
