@@ -337,6 +337,8 @@ function s:SetUpForNewFiletype(filetype, forceReset)
         call s:MapDelimiters('#', '')
     elseif a:filetype ==? "hostsaccess"
         call s:MapDelimiters('#', '')
+    elseif a:filetype ==? "html"
+        call s:MapDelimiters('<!--','-->')
     elseif a:filetype ==? "htmlcheetah"
         call s:MapDelimiters('##','')
     elseif a:filetype ==? "htmldjango"
@@ -563,6 +565,8 @@ function s:SetUpForNewFiletype(filetype, forceReset)
         call s:MapDelimiters('#','')
     elseif a:filetype ==? "robots"
         call s:MapDelimiters('#', '')
+    elseif a:filetype ==? "ruby"
+        call s:MapDelimiters('#','')
     elseif a:filetype ==? "sa"
         call s:MapDelimiters('--','')
     elseif a:filetype ==? "samba"

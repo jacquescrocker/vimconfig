@@ -27,7 +27,7 @@ What I have configured:
 
 - SnipMate: for textmate style snippets
 
-- NerdCommenter: comment/uncommenting for source code
+- NerdCommenter: comment/uncommenting for source code. use command-/ to toggle commenting
 
 - VividChalk: great looking color scheme (looks exactly like VibrantInk on textmate)
 
@@ -63,9 +63,12 @@ What I have configured:
 
 TODO:
 
-map these textmate commands:
+- Figure out why NERDCommenter is so fucking retarded....
+why doesn't it have an option to left align the comments when toggling comments on/off
 
-CONTROL-SHIFT-H: this should "reformat" the document. 
+- map these textmate commands to vim equivalents:
+
+CONTROL-SHIFT-H: this should "tidy" the document. 
 primarily use this for reformating javascript or html files
 
 CONTROL-SHIFT-V: this should "validate" the document
@@ -82,12 +85,6 @@ html: ?
 COMMAND-SHIFT-R: should run a focused unit test
 rspec: run a specific test
 cucumber: run a specific scenario
-
-COMMAND-/: should comment/uncomment code
-
-CONTROL-SHIFT-T: should retab the document (convert tabs to spaces)
-
-CONTROL-SHIFT-S: should remove trailing spaces from the document
 
 CONTROL-H: should look up documentation on the current word (or current highlighted word)
 

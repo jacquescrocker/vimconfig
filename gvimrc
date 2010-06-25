@@ -15,3 +15,6 @@ if has("gui_running")
   set guioptions+=b
 endif
 
+" Tweak invisibles color to be a little darker
+highlight NonText guifg=#333333
+highlight SpecialKey guifg=#333333
