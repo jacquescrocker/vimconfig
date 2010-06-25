@@ -1,15 +1,28 @@
+" no vi compatibility
+set nocompatible
+
 " load all the bundles
 call pathogen#runtime_append_all_bundles()
 
-syntax on
 filetype plugin indent on
-set tabstop=2
-set smarttab
-set shiftwidth=2
-set autoindent
-set expandtab
+syntax on
+
+" General Settings
 set nowrap
 set hidden
+
+" Tabs
+set tabstop=2 " Use 2 spaces for tabs
+set smarttab " Automatic indenting
+set shiftwidth=2 " sets spaces used for indention
+set autoindent " continue indention from previous line
+set expandtab " tab key inserts spaces instead of tabs
+set backspace=2 " start,indent
+
+" Do not use swapfiles or backup since writebackup is used
+" writebackup is still used, so a copy is always kept in memory
+set nobackup " Do not write backup files to disk
+set noswapfile " Do not use swapfiles (they have trouble with large files)
 
 " additional support for some file types
 autocmd BufRead *.html.erb set ft=eruby.html
@@ -17,24 +30,30 @@ autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 set nofoldenable " Fuck code folding...
 
+set whichwrap+=<,>,h,l " allow backspace and cursor keys to cross line boundaries
+
 " map control left and control right to swap the buffer
 map <C-right> <ESC>:bn<CR>
 map <C-left> <ESC>:bp<CR>
 
-" map Shift-J to Scroll Down
-map J <C-d>
-map K <C-u>
+" map Command-j to Scroll Down
+map <D-j> <C-d>
+" map Command-k to Scroll Up
+map <D-k> <C-u>
 
 " set the LEADER key to ,
 let mapleader = ","
 
-" ,v reloads the vimrc -- making all changes active (have to save first)
+" Leader-v reloads the vimrc -- making all changes active (have to save first)
 map <silent> ,v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>:NERDTreeClose<CR>
 
-" Commend-d will toggle the nerdtree drawer
-map <D-d> :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <leader><S-d> :NERDTree %:p:h<CR>
-map <leader>d :NERDTree<CR>
+" NERDTree (Command-d / Leader-d)
+map <leader>d :NERDTreeToggle<CR>
+map <D-d> :NERDTreeToggle<CR>
+map <leader>n :NERDTree<CR>
+" map <D-d> :execute 'NERDTreeToggle ' . getcwd()<CR>
+" navigates nerdtree to the current file
+map <leader><S-d> :NERDTree %:p:h<CR> 
 
 " Shift-w maps to Control-W
 map <S-w> <C-w>
@@ -70,4 +89,34 @@ map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 set wildignore+=*.png,*.jpg,*.gif,*.ai,*.jpeg,*.psd,*.swp,*.jar,*.zip,*.gem,.DS_Store,log/**,tmp/**,coverage/**,rdoc/**
+
+" Replicate textmate shift arrow/movement in order to select stuff
+nmap <S-up> vk
+vmap <S-up> k
+imap <S-up> <esc>v
+nmap <S-k> vk
+vmap <S-k> k
+imap <S-k> <esc>vkk
+
+nmap <S-right> vl
+vmap <S-right> l
+imap <S-right> <esc>vl
+nmap <S-l> vl
+vmap <S-l> l
+imap <S-l> <esc>vl
+
+nmap <S-down> vj
+vmap <S-down> j
+imap <S-down> <esc>vj
+nmap <S-j> vj
+vmap <S-j> j
+imap <S-j> <esc>vj
+
+nmap <S-left> vh
+vmap <S-left> h
+imap <S-left> <esc>vh
+nmap <S-h> vh
+vmap <S-h> h
+imap <S-h> <esc>vh
+
 
