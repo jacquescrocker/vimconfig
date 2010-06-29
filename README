@@ -17,7 +17,6 @@ to use:
     git://github.com/railsjedi/snipmate-snippets.git ~/Vim/snippets
     ln -s $HOME/Vim/snippets ~/Vim/config/snippets
 
-
 --------
 
 What I have configured:
@@ -63,10 +62,9 @@ What I have configured:
 
 TODO:
 
-- Figure out why NERDCommenter is so fucking retarded....
-why doesn't it have an option to left align the comments when toggling comments on/off
-
 - map these textmate commands to vim equivalents:
+
+- do something cool with bcat (outputs to browsers) 
 
 CONTROL-SHIFT-H: this should "tidy" the document. 
 primarily use this for reformating javascript or html files

@@ -1,0 +1,26 @@
+--ignore-dir=rails
+--ignore-dir=tmp
+--ignore-dir=log
+--ignore-dir=vendor
+--no-css
+
+# groups the results by file
+--group
+
+# only show one line of output context around the results
+# --context=1
+
+# follow symlinks
+--follow
+
+--color
+
+# sort the files lexically. why?
+# --sort-files
+
+--type-set
+--type-set=haml=.haml
+--type-set=cucumber=.feature
+--type-set=sass=.sass
+--type-add=ruby=.rake,.builder
+
